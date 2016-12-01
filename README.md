@@ -1,2 +1,4 @@
 # A-Stream
-GNU GPL v3.0
+LICENSE: GNU GPL v3.0
+
+Android youtube video streaming application
