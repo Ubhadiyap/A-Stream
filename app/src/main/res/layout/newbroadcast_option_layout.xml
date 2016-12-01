@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:background="@drawable/newbroadcast_option_background">
+
+    <LinearLayout
+        android:id="@+id/newBroadcastOptionLayout"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="@dimen/newbroadcast_option_padding"
+        android:paddingBottom="@dimen/newbroadcast_option_padding"
+        android:paddingLeft="@dimen/newbroadcast_option_padding"
+        android:paddingRight="@dimen/newbroadcast_option_padding">
+
+        <ImageView
+            android:id="@+id/newBroadcastOptionLayoutIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_clock"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/newbroadcast_option_value_marginleft">
+
+            <TextView
+                android:id="@+id/newBroadcastOptionLayoutHint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hint" />
+
+            <TextView
+                android:id="@+id/newBroadcastOptionLayoutValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:text="Value"
+                android:layout_below="@id/newBroadcastOptionLayoutHint"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

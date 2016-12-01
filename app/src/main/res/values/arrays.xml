@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <integer-array name="video_format_width">
+        <item>426</item>
+        <item>640</item>
+        <item>854</item>
+        <item>1280</item>
+        <item>1920</item>
+    </integer-array>
+
+    <integer-array name="video_format_height">
+        <item>240</item>
+        <item>360</item>
+        <item>480</item>
+        <item>720</item>
+        <item>1080</item>
+    </integer-array>
+
+    <integer-array name="video_format_bitrate_min">
+        <item>300</item>
+        <item>400</item>
+        <item>500</item>
+        <item>1500</item>
+        <item>3000</item>
+    </integer-array>
+
+    <integer-array name="video_format_bitrate_max">
+        <item>700</item>
+        <item>1000</item>
+        <item>2000</item>
+        <item>4000</item>
+        <item>6000</item>
+    </integer-array>
+
+
+</resources>

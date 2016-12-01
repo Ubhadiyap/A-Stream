@@ -1,0 +1,56 @@
+
+{
+	"buildFiles" : [ "D:/Projects/Android/you-live-on-stream/app/CMakeLists.txt" ],
+	"cFileExtensions" : [ "c" ],
+	"cleanCommands" : 
+	[
+		"E:\\Android\\Sdk\\cmake\\3.6.3155560\\bin\\cmake.exe --build D:\\Projects\\Android\\you-live-on-stream\\app\\.externalNativeBuild\\cmake\\release\\armeabi-v7a --target clean"
+	],
+	"libraries" : 
+	{
+		"auth-jni-Release-armeabi-v7a" : 
+		{
+			"abi" : "armeabi-v7a",
+			"artifactName" : "auth-jni",
+			"buildCommand" : "E:\\Android\\Sdk\\cmake\\3.6.3155560\\bin\\cmake.exe --build D:\\Projects\\Android\\you-live-on-stream\\app\\.externalNativeBuild\\cmake\\release\\armeabi-v7a --target auth-jni",
+			"buildType" : "release",
+			"files" : 
+			[
+				
+				{
+					"flags" : "  -target armv7-none-linux-androideabi -gcc-toolchain E:/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=E:/Android/Sdk/ndk-bundle/platforms/android-18/arch-arm -Dauth_jni_EXPORTS -I..\\..\\..\\..\\src\\main\\cpp  -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -Os -DNDEBUG -Os -DNDEBUG  -fPIC      -c ",
+					"src" : "D:/Projects/Android/you-live-on-stream/app/src/main/cpp/auth-jni.c",
+					"workingDirectory" : "D:/Projects/Android/you-live-on-stream/app/.externalNativeBuild/cmake/release/armeabi-v7a"
+				}
+			],
+			"output" : "D:/Projects/Android/you-live-on-stream/app/build/intermediates/cmake/release/obj/armeabi-v7a/libauth-jni.so",
+			"toolchain" : "2259502793"
+		},
+		"ffmpeg-jni-Release-armeabi-v7a" : 
+		{
+			"abi" : "armeabi-v7a",
+			"artifactName" : "ffmpeg-jni",
+			"buildCommand" : "E:\\Android\\Sdk\\cmake\\3.6.3155560\\bin\\cmake.exe --build D:\\Projects\\Android\\you-live-on-stream\\app\\.externalNativeBuild\\cmake\\release\\armeabi-v7a --target ffmpeg-jni",
+			"buildType" : "release",
+			"files" : 
+			[
+				
+				{
+					"flags" : "  -target armv7-none-linux-androideabi -gcc-toolchain E:/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=E:/Android/Sdk/ndk-bundle/platforms/android-18/arch-arm -Dffmpeg_jni_EXPORTS -I..\\..\\..\\..\\src\\main\\cpp  -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -Os -DNDEBUG -Os -DNDEBUG  -fPIC      -c ",
+					"src" : "D:/Projects/Android/you-live-on-stream/app/src/main/cpp/ffmpeg-jni.c",
+					"workingDirectory" : "D:/Projects/Android/you-live-on-stream/app/.externalNativeBuild/cmake/release/armeabi-v7a"
+				}
+			],
+			"output" : "D:/Projects/Android/you-live-on-stream/app/build/intermediates/cmake/release/obj/armeabi-v7a/libffmpeg-jni.so",
+			"toolchain" : "2259502793"
+		}
+	},
+	"toolchains" : 
+	{
+		"2259502793" : 
+		{
+			"cCompilerExecutable" : "E:/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/bin/clang.exe",
+			"cppCompilerExecutable" : "E:/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/bin/clang++.exe"
+		}
+	}
+}

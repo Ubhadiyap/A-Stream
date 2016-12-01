@@ -1,0 +1,106 @@
+import java.util.regex.Pattern
+
+apply plugin: 'com.android.application'
+apply plugin: 'me.tatarka.retrolambda'
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion "24.0.0"
+
+    defaultConfig {
+        applicationId "com.someoneman.youliveonstream"
+        minSdkVersion 18
+        targetSdkVersion 24
+        versionCode 9
+        versionName "0.0.9"
+    }
+
+    dexOptions {
+        javaMaxHeapSize "3g"
+        jumboMode true
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    signingConfigs {
+        debug {
+            storeFile file("../keystore_debug.jks")
+            storePassword "4815162342"
+            keyAlias "YouLiveOnStreamDebug"
+            keyPassword "4815162342"
+        }
+
+        release {
+            storeFile file("../keystore_release.jks")
+            storePassword "4815162342"
+            keyAlias "AStreamRelease"
+            keyPassword "4815162342"
+        }
+    }
+
+    buildTypes {
+        oldDebug {
+            signingConfig signingConfigs.debug
+            multiDexEnabled true
+        }
+
+        debug {
+            signingConfig signingConfigs.debug
+            useProguard false
+        }
+        release {
+            signingConfig signingConfigs.release
+            useProguard true
+            zipAlignEnabled true
+            multiDexEnabled true
+        }
+    }
+
+    sourceSets.main {
+        jniLibs.srcDir 'src/main/libs'
+        jni.srcDirs = [] //disable automatic ndk-build call
+    }
+
+    productFlavors {
+        armv7 {
+            ndk {
+                abiFilter "armeabi-v7a"
+            }
+        }
+
+        x86 {
+            ndk {
+                abiFilter "x86"
+            }
+        }
+    }
+}
+
+def getVersionCodeFromManifest() {
+    def manifestFile = file(android.sourceSets.main.manifest.srcFile)
+    def pattern = Pattern.compile("versionCode=\"(\\d+)\"")
+    def matcher = pattern.matcher(manifestFile.getText())
+    matcher.find()
+    return Integer.parseInt(matcher.group(1))
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:multidex:1.0.1'
+    compile 'com.android.support:appcompat-v7:24.0.0'
+    compile 'com.android.support:design:24.0.0'
+    compile 'com.google.apis:google-api-services-youtube:v3-rev163-1.21.0'
+    compile 'com.google.apis:google-api-services-plus:v1-rev401-1.21.0'
+    compile 'com.google.api-client:google-api-client-android:1.21.0'
+    compile 'com.google.api-client:google-api-client-gson:1.21.0'
+    compile 'com.android.support:cardview-v7:24.0.0'
+    compile 'com.android.support:recyclerview-v7:24.0.0'
+    compile 'com.android.support:preference-v7:24.0.0'
+    compile 'com.jakewharton:disklrucache:2.0.2'
+    compile 'de.hdodenhof:circleimageview:2.0.0'
+    compile 'org.jbundle.util.osgi.wrapped:org.jbundle.util.osgi.wrapped.org.apache.http.client:4.1.2'
+    compile 'com.android.support:support-v4:24.0.0'
+}

@@ -1,0 +1,4 @@
+D:/Projects/Android/you-live-on-stream/app/.externalNativeBuild/cmake/release/armeabi-v7a/CMakeFiles/rebuild_cache.dir
+D:/Projects/Android/you-live-on-stream/app/.externalNativeBuild/cmake/release/armeabi-v7a/CMakeFiles/auth-jni.dir
+D:/Projects/Android/you-live-on-stream/app/.externalNativeBuild/cmake/release/armeabi-v7a/CMakeFiles/ffmpeg-jni.dir
+D:/Projects/Android/you-live-on-stream/app/.externalNativeBuild/cmake/release/armeabi-v7a/CMakeFiles/edit_cache.dir

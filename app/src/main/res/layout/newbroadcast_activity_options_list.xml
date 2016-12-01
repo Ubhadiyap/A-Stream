@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:animateLayoutChanges="true">
+
+    <com.someoneman.youliveonstream.views.newbroadcastoptions.NewBroadcastOptionArray
+        android:id="@+id/optionVideoQuality"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:image="@drawable/ic_quality_high"
+        app:hint="@string/video_quality"
+        app:values="@array/streamer_quality" />
+
+    <com.someoneman.youliveonstream.views.newbroadcastoptions.NewBroadcastOptionArray
+        android:id="@+id/optionAccessType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:image="@drawable/ic_access_point"
+        app:values="@array/access_to_stream"
+        app:hint="@string/broadcast_access" />
+
+    <com.someoneman.youliveonstream.views.newbroadcastoptions.NewBroadcastOptionLayout
+        android:id="@+id/optionUsersList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:image="@drawable/ic_account"
+        app:value="Ни кто не выбран"
+        app:hint="Доступ для" />
+
+    <com.someoneman.youliveonstream.views.newbroadcastoptions.NewBroadcastOptionLayout
+        android:id="@+id/optionStartTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:image="@drawable/ic_clock"
+        app:value="13.06.2016 16:10"
+        app:hint="Начало трансляции" />
+
+</LinearLayout>

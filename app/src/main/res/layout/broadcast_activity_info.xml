@@ -1,0 +1,73 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    tools:context=".activities.broadcast.BroadcastInfoFragment"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@drawable/background_broadcast_status"
+    tools:showIn="@layout/broadcast_activity">
+
+    <TextView
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Ожидание"
+        android:id="@+id/textViewBroadcastStatus"
+        android:textColor="@android:color/white"
+        android:background="@drawable/background_status_live"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        android:gravity="center_vertical|center_horizontal"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="00:00:00"
+        android:id="@+id/textViewTimer"
+        android:textColor="@android:color/white"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_weight="1"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="0"
+        android:id="@+id/textViewViewers"
+        android:textColor="@android:color/white"
+        android:drawableLeft="@drawable/ic_visibility_light"
+        android:drawablePadding="5dp"
+        android:gravity="center_vertical"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="0"
+        android:id="@+id/textViewLikes"
+        android:textColor="@android:color/white"
+        android:drawableLeft="@drawable/ic_thumb_up_light"
+        android:drawablePadding="5dp"
+        android:gravity="center_vertical"
+        android:layout_weight="1"/>
+
+
+    <TextView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="0"
+        android:id="@+id/textViewDislikes"
+        android:textColor="@android:color/white"
+        android:drawableLeft="@drawable/ic_thumb_down_light"
+        android:drawablePadding="5dp"
+        android:gravity="center_vertical"
+        android:layout_weight="1"/>
+
+
+</LinearLayout>

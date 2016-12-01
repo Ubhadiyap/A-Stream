@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.someoneman.youliveonstream.contoller.views.camera.CameraSurfaceView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:id="@+id/gLView"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycleView"
+        android:layout_width="@dimen/chatmessage_adapter_width"
+        android:layout_height="match_parent"
+        android:padding="22dp"
+        android:clipToPadding="false"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="20dp">
+        <include
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="20dp"
+            layout="@layout/broadcast_activity_interractable"/>
+
+        <fragment
+            android:name="com.someoneman.youliveonstream.activities.broadcast.BroadcastInfoFragment"
+            android:id="@+id/broadcastInfo"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            tools:layout="@layout/broadcast_activity_info" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="title"
+        android:id="@+id/textViewTitle"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>

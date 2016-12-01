@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#DB4437</color>
+    <color name="colorPrimaryDark">#B93221</color>
+    <color name="colorAccent">#DB4437</color>
+    <color name="colorWhite">#F2F2F2</color>
+    <color name="colorLightStatusBar">#9E9E9E</color>
+    <color name="textPrimary">#FFFFFF</color>
+
+    <color name="windowBackground">#FFFFFFFF</color>
+    <color name="primaryText">#DE000000</color>
+    <color name="secondaryText">#8A000000</color>
+    <color name="disabledText">#61000000</color>
+    <color name="ultraLightGray">#e1e1e1</color>
+
+    <color name="messageUser">#7AFFFFFF</color>
+    <color name="messageOwner">#7AFFFF00</color>
+    <color name="messageSponsor">#7AFF0000</color>
+    <color name="messageModerator">#7A0000FF</color>
+    <color name="green">#ffffff</color>
+
+    <color name="drawerHeaderBackground">#33000000</color>
+    <color name="drawerTextColor">#000000</color>
+    <color name="drawerIconTint">#000000</color>
+</resources>

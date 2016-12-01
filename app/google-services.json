@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_id": "you-live-on-stream-android",
+    "project_number": "342385028954",
+    "name": "You Live on Stream Android"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:342385028954:android:d36628107473fc8b",
+        "client_id": "android:com.someoneman.youliveonstream",
+        "client_type": 1,
+        "android_client_info": {
+          "package_name": "com.someoneman.youliveonstream"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "342385028954-o39aavp1mu195t08da9a9rafbp8raqhv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.someoneman.youliveonstream",
+            "certificate_hash": "554D7E1AFC9F861A04D9E25C26C545F6FF43EE29"
+          }
+        },
+        {
+          "client_id": "342385028954-e5ci97qkv8bc5q7i2g7dhat9gbpjhuul.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "cloud_messaging_service": {
+          "status": 1,
+          "apns_config": []
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "google_signin_service": {
+          "status": 2
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "client_info": [],
+  "ARTIFACT_VERSION": "1"
+}

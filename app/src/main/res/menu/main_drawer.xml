@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_all_broadcasts"
+            android:icon="@drawable/ic_camera"
+            android:title="@string/all_broadcasts" />
+    </group>
+
+    <group
+        android:id="@+id/menu_bottom"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_settings"
+            android:title="@string/action_settings" />
+    </group>
+
+    <item
+        android:title="Управления аккаунтом"
+        android:visible="false">
+        <menu>
+            <group
+                android:id="@+id/menu_account">
+                <item
+                    android:id="@+id/nav_change"
+                    android:icon="@drawable/ic_account_multiple"
+                    android:title="@string/change_gplus_profile" />
+
+                <item
+                    android:id="@+id/nav_logout"
+                    android:icon="@drawable/ic_logout_variant"
+                    android:title="@string/exit_gplus_profile" />
+            </group>
+        </menu>
+    </item>
+
+</menu>

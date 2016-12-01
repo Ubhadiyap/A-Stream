@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <declare-styleable name="NewBroadcastOptionLayout">
+        <attr name="value" format="string" />
+        <attr name="hint" format="string" />
+        <attr name="image" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="NewBroadcastOptionArray">
+        <attr name="values" format="reference" />
+    </declare-styleable>
+</resources>

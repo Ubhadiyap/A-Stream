@@ -1,0 +1,5 @@
+# ninja log v5
+0	1435	0	CMakeFiles/ffmpeg-jni.dir/src/main/cpp/ffmpeg-jni.c.o	c3b3e3a0552637c
+1435	1499	0	../../../../build/intermediates/cmake/debug/obj/armeabi-v7a/libffmpeg-jni.so	8ca20d9b40e1fdbf
+1	80	0	CMakeFiles/auth-jni.dir/src/main/cpp/auth-jni.c.o	3e86615299405ab2
+80	127	0	../../../../build/intermediates/cmake/debug/obj/armeabi-v7a/libauth-jni.so	4becb591ad93d26c

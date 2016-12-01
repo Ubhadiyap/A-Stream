@@ -1,0 +1,117 @@
+<resources>
+    <string name="app_name">A-Stream</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Настройки</string>
+
+    <string name="google_app_id">you-live-on-stream-android</string>
+
+    <string name="testing_hello_word">Дорогой друг, спасибо за участие в тестировании нашего приложения!
+        К сожалению, в нем еще много косяков и нерабочих кнопочек, но мы работаем над решением всех вопросов и пытаемся создать для Вас лучшее приложение.</string>
+
+    <string name="activity_broadcasts">Трансляции</string>
+
+    <string name="error_no_internet">Отсутствует активное соединение с сетью Интернет</string>
+    <string name="error_no_permissions">Доступ к необходимым параметрам запрещен. Перезапустите приложение для повтороного запроса</string>
+    <string name="error_no_camera">Отсутствует доступ к камерам или на вашем устройстве их нет</string>
+    <string name="error_auth">Произошла ошибка во время авторизации</string>
+    <string name="error_loading_ytchannel_info">Ошибка загрузки информации о YouTube канале!</string>
+    <string name="error_yt_new_broadcast">Ошибка создания новой трансляции!</string>
+    <string name="errro_yt_broadcast_list_loading">Ошибка загрузки информации о трансляциях!</string>
+    <string name="error_yt_broadcast_stop">Ошибка остановки трансляции!</string>
+
+    <string name="status_connect_rtmp">Подключение</string>
+    <string name="status_stream_active">Опрос сервера</string>
+    <string name="status_broadcast_testing">Проверка соединения</string>
+    <string name="status_broadcast_live">Прямой эфир</string>
+    <string name="authorization">Авторизация</string>
+    <string name="authorization_is_not_valid">Предыдущая авторизация не действительна!</string>
+    <string name="change_gplus_profile">Сменить профиль</string>
+    <string name="exit_gplus_profile">Выход</string>
+    <string name="stoping_broadcast">Завершение трансляции</string>
+
+    <string-array name="streamer_quality">
+        <item>240p</item>
+        <item>360p</item>
+        <item>480p</item>
+        <item>720p</item>
+    </string-array>
+
+    <string-array name="access_to_stream">
+        <item>Открытый доступ</item>
+        <item>Доступ по ссылке</item>
+        <item>Ограниченный доступ</item>
+    </string-array>
+
+    <string-array name="youtubeapi_access_to_stream">
+        <item>public</item>
+        <item>unlisted</item>
+        <item>private</item>
+    </string-array>
+
+    <string-array name="youtubeapi_cdn_format">
+        <item>240p</item>
+        <item>360p</item>
+        <item>480p</item>
+        <item>720p</item>
+    </string-array>
+
+    <string-array name="broadcast_action_dialog">
+        <item>Поделиться</item>
+        <item>Удалить трансляцию</item>
+    </string-array>
+
+    <string-array name="broadcast_sort_entires">
+        <item>Последние</item>
+        <item>Лидеры просмотров</item>
+    </string-array>
+
+    <string name="all_broadcasts">Все трансляции</string>
+    <string name="new_broadcast">Новая трансляция</string>
+    <string name="broadcast_title">Название трансляции</string>
+    <string name="description">Описание</string>
+    <string name="create">Создать</string>
+    <string name="dismiss">Отмена</string>
+    <string name="broadcast_creating">Создаем трансляцию</string>
+    <string name="broadcast_by">Трансляция от %s</string>
+    <string name="broadcast_by_datemaket">dd.MM.yyyy HH:mm:ss</string>
+    <string name="share">Поделиться</string>
+    <string name="onlive">Прямой эфир</string>
+    <string name="end_broadcast_q">Завершить трансляцию?</string>
+    <string name="end">Завершить</string>
+    <string name="stop">Остановить</string>
+    <string name="ending">Завершение</string>
+    <string name="stoping">Остановка</string>
+    <string name="video_quality">Качество видео</string>
+    <string name="broadcast_access">Доступ к трансляции</string>
+    <string name="empty">нет</string>
+    <string name="thousand">тыс.</string>
+    <string name="millions">млн.</string>
+    <string name="broadcast_adapter_info" formatted="false">Просмотров: %s · Комментариев: %s\nЛайков: %s · Дизлайков: %s\nДоступ: %s</string>
+    <string name="created">Трансляция создана</string>
+    <string name="complete">Завершено</string>
+    <string name="ready">Готово для прямого эфира</string>
+    <string name="live">В эфире</string>
+    <string name="privacy_public">публичный</string>
+    <string name="privacy_private">ограниченный</string>
+    <string name="privacy_unlisted">по ссылке</string>
+
+    <string name="webauth_url_mask">%1$s?redirect_uri=%2$s&amp;response_type=code&amp;client_id=%3$s&amp;access_type=offline&amp;scope=%4$s</string>
+    <string name="webauth_redirect_url">http://localhost</string>
+    <string name="webauth_oauth_url">https://accounts.google.com/o/oauth2/auth</string>
+    <string-array name="webauth_scopes">
+        <item>https://www.googleapis.com/auth/youtube</item>
+        <item>https://www.googleapis.com/auth/youtube.force-ssl</item>
+        <item>https://www.googleapis.com/auth/youtubepartner</item>
+        <item>https://www.googleapis.com/auth/youtubepartner-channel-audit</item>
+        <item>https://www.googleapis.com/auth/userinfo.email</item>
+        <item>https://www.googleapis.com/auth/userinfo.profile</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="thumbnail">Thumbnail</string>
+
+</resources>
